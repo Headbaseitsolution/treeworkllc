@@ -1,0 +1,257 @@
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+}
+nav.forflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 240px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.mainmenu {
+  display: flex;
+  float: right;
+  grid-gap: 50px;
+}
+.mainmenu a {
+  padding: 10px 0px;
+  text-decoration: none;
+  color: var(--white);
+  font-family: "Gordita";
+  font-weight: 500;
+}
+
+.ltn_header_transparent {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  background-color: transparent;
+}
+
+.aboutsection {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.aboutcontent {
+  padding: 150px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutcontent h4 {
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+.aboutbanner img {
+  display: flex;
+  width: 100%;
+}
+ul.companylocation h5 {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+ul.companylocation {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+  margin-bottom: 30px;
+}
+h5.licensed {
+  background: var(--background-color);
+  border-left: 4px solid #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+  font-weight: 400;
+}
+h5.licensed span {
+  font-weight: 700;
+}
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ctablock h6 {
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.ctablock h5 {
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+.ctabutton a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 10px;
+  background: #000;
+  border: 4px solid #000;
+  justify-content: space-between;
+  color: #fff;
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  transition: all 0.4s;
+}
+.ctabutton a:hover {
+  background-color: transparent;
+  color: #000;
+  transition: all 0.4s;
+}
+.ctabutton {
+  width: fit-content;
+}
+.ctabutton a:before {
+  content: "\f095";
+  font-family: "Font Awesome 6 Pro";
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forbgcolor {
+  background: rgba(247, 247, 247, 0.45);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.forbgcolor2 {
+  background-color: #000;
+  color: #fff;
+  padding: 70px 0px;
+}
+.cta2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ctablock2 p {
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+.ctabutton2 a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 10px;
+  background: #fff;
+  border: 4px solid #fff;
+  justify-content: space-between;
+  color: #000;
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  transition: all 0.4s;
+}
+.ctabutton2 a:hover {
+  background: 0 0;
+  color: #fff;
+  transition: all 0.4s;
+}
+.ctabutton2 a:before {
+  content: "\f095";
+  font-family: "Font Awesome 6 Pro";
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services {
+  display: flex;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.servicesblock h5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+  gap: 15px;
+}
+.services .servicesblock {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background: var(--background-color);
+  border-radius: 50px;
+}
+.servicesblock Image {
+  border-radius: 50px 50px 0 0;
+}
+.servicesweprovide {
+  padding: 100px 0px;
+}
+/* Heading 1 */
+.heading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+.heading p {
+  width: 636px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading h2 {
+  border-top: 4px solid var(--primary);
+  border-bottom: 4px solid var(--primary);
+  width: fit-content;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.blogblock {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  text-align: center;
+}
+.blogcontent {
+  background: #21325e;
+  transition: all 0.4s;
+}
+.blogcontent:hover {
+  background: #163a94;
+  transition: all 0.4s;
+}
+.blogtitile {
+  padding: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
