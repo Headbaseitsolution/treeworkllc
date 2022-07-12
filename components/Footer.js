@@ -108,7 +108,7 @@ export default function Footer() {
           <div className="container-fluid">
             <div className="bottom-sections">
               <div className="copyright">
-                <p>&copy; - 2022. Tree Works LLC. All Rights Reserved.</p>
+                <p>&copy; - 2022. Tree Works LLC. All Rights Reserved.s</p>
               </div>
               <div className="social">
                 <ul>
