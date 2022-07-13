@@ -16,7 +16,7 @@ export default function pageno({ newsposts }) {
               height={700}
               alt="thumbnail"
             ></Image>
-            <h2>{newsposts.title.rendered}</h2>
+            <h2>{newsposts.title.rendered.toString()}</h2>
             <div
               dangerouslySetInnerHTML={{ __html: newsposts.content.rendered }}
             ></div>

@@ -1,5 +1,5 @@
 import styles from "/styles/Home.module.css";
-import Link from "next/dist/client/link";
+import Link from "next/link";
 export default function EstimateDark() {
   return (
     <div className={styles.forbgcolor2}>
