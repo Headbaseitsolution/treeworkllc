@@ -1,5 +1,5 @@
 import styles from "../styles/Home.module.css";
-import Image from "next/Image";
+import Image from "next/image";
 import BreadcrumbBlogs from "../components/blog_breadcrumb";
 export default function pageno({ newsposts }) {
   return (
