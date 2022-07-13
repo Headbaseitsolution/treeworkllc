@@ -1,3 +1,4 @@
+import styles from "../styles/Home.module.css";
 import Image from "next/Image";
 import BreadcrumbBlogs from "../components/blog_breadcrumb";
 export default function pageno({ newsposts }) {
@@ -8,16 +9,18 @@ export default function pageno({ newsposts }) {
           <BreadcrumbBlogs />
         </div>
         <div className="container pt100 pb100">
-          <Image
-            src={newsposts.jetpack_featured_media_url}
-            width={1440}
-            height={700}
-            alt="thumbnail"
-          ></Image>
-          <h2>{newsposts.title.rendered}</h2>
-          <div
-            dangerouslySetInnerHTML={{ __html: newsposts.content.rendered }}
-          ></div>
+          <div className={styles.container}>
+            <Image
+              src={newsposts.jetpack_featured_media_url}
+              width={1440}
+              height={700}
+              alt="thumbnail"
+            ></Image>
+            <h2>{newsposts.title.rendered}</h2>
+            <div
+              dangerouslySetInnerHTML={{ __html: newsposts.content.rendered }}
+            ></div>
+          </div>
         </div>
       </div>
     </>

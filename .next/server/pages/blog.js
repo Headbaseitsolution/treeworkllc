@@ -60,39 +60,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Blog({ newsposts  }) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_blog_breadcrumb__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {})
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "container pt100 pb100",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_4___default().blogblock),
-                    children: newsposts.slice(0, 6).map((post)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_4___default().blogcontent),
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_Image__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                    src: post.jetpack_featured_media_url,
-                                    width: 600,
-                                    height: 400,
-                                    alt: "thumbnail"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                    href: `${post.id}`,
-                                    className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_4___default().blogcolumn),
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_4___default().blogtitile),
-                                        dangerouslySetInnerHTML: {
-                                            __html: post.title.rendered
-                                        }
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_blog_breadcrumb__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {})
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "container pt100 pb100",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_4___default().blogblock),
+                        children: newsposts.slice(0, 6).map((post)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_4___default().blogcontent),
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_Image__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                        src: post.jetpack_featured_media_url,
+                                        width: 600,
+                                        height: 400,
+                                        alt: "thumbnail"
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                        href: `${post.id}`,
+                                        className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_4___default().blogcolumn),
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: (_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_4___default().blogtitile),
+                                            dangerouslySetInnerHTML: {
+                                                __html: post.title.rendered
+                                            }
+                                        })
                                     })
-                                })
-                            ]
-                        }, post.id))
+                                ]
+                            }, post.id))
+                    })
                 })
-            })
-        ]
+            ]
+        })
     });
 };
 async function getStaticProps() {

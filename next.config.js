@@ -9,4 +9,7 @@ module.exports = {
   images: {
     domains: ["techcrunch.com"],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };

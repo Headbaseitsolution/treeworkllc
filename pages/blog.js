@@ -4,31 +4,33 @@ import Link from "next/link";
 import BreadcrumbBlogs from "../components/blog_breadcrumb";
 export default function Blog({ newsposts }) {
   return (
-    <div>
+    <>
       <div>
-        <BreadcrumbBlogs />
-      </div>
-      <div className="container pt100 pb100">
-        <div className={styles.blogblock}>
-          {newsposts.slice(0, 6).map((post) => (
-            <div className={styles.blogcontent} key={post.id}>
-              <Image
-                src={post.jetpack_featured_media_url}
-                width={600}
-                height={400}
-                alt="thumbnail"
-              ></Image>
-              <Link href={`${post.id}`} className={styles.blogcolumn}>
-                <div
-                  className={styles.blogtitile}
-                  dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                ></div>
-              </Link>
-            </div>
-          ))}
+        <div>
+          <BreadcrumbBlogs />
+        </div>
+        <div className="container pt100 pb100">
+          <div className={styles.blogblock}>
+            {newsposts.slice(0, 6).map((post) => (
+              <div key={post.id} className={styles.blogcontent}>
+                <Image
+                  src={post.jetpack_featured_media_url}
+                  width={600}
+                  height={400}
+                  alt="thumbnail"
+                ></Image>
+                <Link href={`${post.id}`} className={styles.blogcolumn}>
+                  <div
+                    className={styles.blogtitile}
+                    dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                  ></div>
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
