@@ -63,7 +63,7 @@ export default function Footer() {
                 <ul className="footer-menu-links">
                   <li>
                     <Link href="/">
-                      <a className={styles.footermenu}>Pruning/Trimming</a>
+                      <a className={styles.footermenu}>Tree Removal</a>
                     </Link>
                   </li>
                   <li>
