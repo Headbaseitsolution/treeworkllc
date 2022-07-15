@@ -21,7 +21,7 @@ export default function Gallery() {
       </div>
       <div className="emergencygallery-images">
         <div className="gallerycolumn gallery">
-          <Link href="/images/service5.jpg" data-lightbox="mygallery">
+          <Link href="/images/gallery1.jpg" data-lightbox="mygallery">
             <Image
               src="/images/gallery1.jpg"
               className="gallery-img"
@@ -32,9 +32,31 @@ export default function Gallery() {
           </Link>
         </div>
         <div className="gallerycolumn gallery">
-          <Link href="/images/service5.jpg" data-lightbox="mygallery">
+          <Link href="/images/gallery2.jpg" data-lightbox="mygallery">
             <Image
-              src="/images/gallery1.jpg"
+              src="/images/gallery2.jpg"
+              className="gallery-img"
+              alt="logo"
+              width={280}
+              height={250}
+            />
+          </Link>
+        </div>
+        <div className="gallerycolumn gallery">
+          <Link href="/images/gallery3.jpg" data-lightbox="mygallery">
+            <Image
+              src="/images/gallery3.jpg"
+              className="gallery-img"
+              alt="logo"
+              width={280}
+              height={250}
+            />
+          </Link>
+        </div>
+        <div className="gallerycolumn gallery">
+          <Link href="/images/gallery4.jpg" data-lightbox="mygallery">
+            <Image
+              src="/images/gallery4.jpg"
               className="gallery-img"
               alt="logo"
               width={280}
@@ -45,29 +67,7 @@ export default function Gallery() {
         <div className="gallerycolumn gallery">
           <Link href="/images/service5.jpg" data-lightbox="mygallery">
             <Image
-              src="/images/gallery1.jpg"
-              className="gallery-img"
-              alt="logo"
-              width={280}
-              height={250}
-            />
-          </Link>
-        </div>
-        <div className="gallerycolumn gallery">
-          <Link href="/images/service5.jpg" data-lightbox="mygallery">
-            <Image
-              src="/images/gallery1.jpg"
-              className="gallery-img"
-              alt="logo"
-              width={280}
-              height={250}
-            />
-          </Link>
-        </div>
-        <div className="gallerycolumn gallery">
-          <Link href="/images/service5.jpg" data-lightbox="mygallery">
-            <Image
-              src="/images/gallery1.jpg"
+              src="/images/gallery5.jpg"
               className="gallery-img"
               alt="logo"
               width={280}
