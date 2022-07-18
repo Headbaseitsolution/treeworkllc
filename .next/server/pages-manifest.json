@@ -3,7 +3,10 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/blog": "pages/blog.js",
+  "/about": "pages/about.js",
   "/services": "pages/services.js",
-  "/testimonials": "pages/testimonials.js"
+  "/emergency": "pages/emergency.js",
+  "/testimonials": "pages/testimonials.js",
+  "/blog": "pages/blog.js",
+  "/[pageno]": "pages/[pageno].js"
 }
