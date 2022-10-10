@@ -17,7 +17,7 @@ export default function Blog({ newsposts }) {
                   src={post.jetpack_featured_media_url}
                   width={600}
                   height={400}
-                  alt="thumbnail"
+                  alt="featured-image"
                 ></Image>
                 <Link href={`${post.id}`} className={styles.blogcolumn}>
                   <div
